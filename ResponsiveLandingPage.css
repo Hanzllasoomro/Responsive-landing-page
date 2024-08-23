@@ -1,0 +1,131 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.section {
+    padding: 60px 20px;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #25d431, #0f15b1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* Navigation Menu Styles */
+.navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f43030;
+    padding: 10px 20px;
+    width: 98%;
+    height: 2rem;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    display: block;
+    padding: 15px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-link:hover {
+    color: #333;
+    background-color: white;
+}
+
+/* Scrolled State for Navbar */
+.scrolled {
+    background-color: #555 !important;
+}
+
+/* Article Styles */
+.article {
+    margin: 20px 0;
+}
+
+.article h3 {
+    margin: 0;
+}
+
+.article p {
+    margin: 10px 0;
+}
+
+.article a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.article a:hover {
+    color: #0056b3;
+}
+
+/* Photo Gallery Styles */
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    border: 2px solid black;
+    margin: 5px;
+    margin-left: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px black;
+    transition: 1s;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 5px 0 0 ;
+}
+.gallery-photo {
+    margin: 10px;
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery-photo:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-item {
+        margin: 10px 0;
+    }
+}
+.card:hover{
+    box-shadow: 0 4px 18px green;
+    width: 250px;
+    height: 350px;
+}
